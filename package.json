@@ -4,9 +4,7 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "test": "LOG_LEVEL=error lab ./test/*.test.js",
-    "test:fails": "lab ./test/1.test.js ./test/2.test.js ./test/3.test.js",
-    "test:works": "lab ./test/1.test.js ./test/3.test.js ./test/2.test.js"
+    "test": "LOG_LEVEL=error lab ./test/*.test.js"
   },
   "author": "",
   "license": "ISC",
@@ -20,6 +18,7 @@
     "hapi": "^18.1.0",
     "hapi-auth-jwt2": "^8.3.0",
     "jwks-rsa": "^1.4.0",
-    "request": "^2.88.0"
+    "request": "^2.88.0",
+    "superagent": "^4.1.0"
   }
 }
