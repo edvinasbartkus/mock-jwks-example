@@ -1,0 +1,25 @@
+{
+  "name": "mock",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "LOG_LEVEL=error lab ./test/*.test.js",
+    "test:fails": "lab ./test/1.test.js ./test/2.test.js ./test/3.test.js",
+    "test:works": "lab ./test/1.test.js ./test/3.test.js ./test/2.test.js"
+  },
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "code": "^5.2.4",
+    "lab": "^18.0.2",
+    "mock-jwks": "^0.1.9",
+    "nock": "^10.0.6"
+  },
+  "dependencies": {
+    "hapi": "^18.1.0",
+    "hapi-auth-jwt2": "^8.3.0",
+    "jwks-rsa": "^1.4.0",
+    "request": "^2.88.0"
+  }
+}
