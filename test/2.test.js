@@ -6,6 +6,7 @@ const lab = exports.lab = Lab.script()
 const { describe, before, after, it } = lab
 
 const Server = require('../server')
+const nock = require('nock')
 
 describe('2', () => {
   let testServer
@@ -19,6 +20,7 @@ describe('2', () => {
   after(async () => {
     await testServer.stop()
     await jwksMock.stop()
+    nock.cleanAll()
   })
 
   it('returns error if not authenticated', async () => {
